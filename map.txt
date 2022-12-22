@@ -1,0 +1,325 @@
+01.Introduction to JavaScript	
+ans> What is JavaScript?	JavaScript is a High-level Interpreted or Just-in-time (JIT) Complied Dynamically-typed Multi-paradigm Prototype-based Single-threaded Non-blocking Asynchronous language that conforms to the ECMAScript specification.
+
+02. JavaScript versions	
+•	The Original JavaScript ES1 ES2 ES3 (1997-1999)
+•	The First Main Revision ES5 (2009)
+•	The Second Revision ES6 (2015)
+•	All Yearly Additions (2016, 2017, 2018, 2019, 2020)
+
+03. All About Variables	Variable Declarations	
+	3.1. Variable naming rules	
+	3.2. Variable Scopes	
+        3.2.1. Block	
+		3.2.2. Function	
+		3.2.3. Global	
+	3.3. Hoisting	
+
+04. Data types	
+    4.1. Primitive Types	
+        4.1.1. string 	
+		4.1.2. number	
+		4.1.3. boolean	
+		4.1.4. bigint	
+		4.1.5. undefined	
+		4.1.6. null	
+		4.1.7. Symbol	
+	4.2. Object	
+        4.2.1. Built-in Objects	
+		4.2.2. Object Prototype	
+		4.2.3. Prototypal
+		4.2.4. Inheritance	
+		4.2.5. typeof operator	
+        
+05. Data Structures	
+	5.1. Indexed Collections
+		5.1.1. Arrays	
+		5.1.2. Typed Arrays	
+	5.2. Structured data
+		5.2.1. JSON	
+	5.3. Keyed Collections
+		5.3.1. Map	
+		5.3.2. Weak Map	
+		5.3.3. Set	
+		5.3.4. Weak Set	
+
+06. Equality Comparisons
+	6.1. Value Comparison Operators		
+	6.2. Equality Algorithms			
+		6.2.1. isLooselyEqual	
+		6.2.2. isStrictlyEqual	
+		6.2.3. SameValueZero	
+		6.2.4. SameValue	
+
+07. Expressions and Operators	
+	7.1. Assignment Operators		
+	7.2. Comparison Operators		
+	7.3. Arithmetic Operators		
+	7.4. Bitwise Operators		
+	7.5. Logical Operators		
+	7.6. BigInt Operators		
+	7.7. String Operators		
+	7.8. Conditional Operators		
+	7.9. Comma Operators		
+	7.10. Unary Operators		
+	7.11. Relational Operators		
+
+08. Control flow	
+	8.1. Conditional Statements	
+		8.1.1. If…else	
+		8.1.2. Switch	
+	8.2. Exception Handling	
+		8.2.1. throw statement	
+		8.2.2. try	
+		8.2.3. catch	
+		8.2.4. finally	
+		8.2.5. Utilizing error objects	
+
+09. Loops and Iterations
+	9.1. for statements		
+	9.2. do…while statements		
+	9.3. while statements		
+	9.4. for...in statements		
+	9.5. for…of statements		
+	9.6. Break		
+	9.7. Continue		
+	9.8. Labeled statements		
+
+10. Functions	
+	10.1. Function Parameters
+		10.1.1 Default Params	
+		10.1.2. Rest params	
+	10.2. Arrow Functions		
+	10.3. Built-in Functions		
+	10.4. IIFEs		
+	10.5. Arguments object		
+	10.6. Scope & Function Stack			
+		10.6.1. Recursion	
+		10.6.2. Lexical Scoping	
+		10.6.3. Closures	
+
+11. Strict Mode			
+
+12. Using (this) keyword	
+	12.1. In a method		
+	12.2. In a function		
+	12.3. Using it alone		
+	12.4. In event handlers		
+	12.5. In arrow functions		
+	12.6. Explicit Binding	
+		12.6.1. Call	
+		12.6.2. Apply	
+		12.6.3. Bind	
+
+13. Asynchronous JavaScrip
+	13.1. setTimeout		
+	13.2. setInterval		
+	13.3. Callbacks		
+	13.4. Callback Hell		
+	13.5. Promises	
+		13.5.1. Async	
+		13.5.2. Awite	
+
+14. Working with APIs	
+	14.1. XMLHTTPRequest		
+	14.2. Fetch		
+
+15. Classes			
+
+16. Iterators & Generators			
+
+17. Modules in JavaScript
+	17.1. ECMAScript Modules		
+	17.2. CommonJs		
+
+18. Memory Management
+	18.1. Memory Lifecycle		
+	18.2. Garbage collection	
+
+19. Using chrome dev tools
+	19.1. Debugging Issues		
+	19.2. Debugging Memory Leaks		
+	19.3. Debugging Performance		
+
+**************************************
+**************************************
+JavaScript Beginning to Mastery Syllabus
+Youtube: https://www.youtube.com/watch?v=chx9Rs41W6g
+
+
+•	JavaScript vs EcmaScript 
+•	Install vscode and run first program
+
+Basics of Programming in JavaScript
+•	Hello world program
+•	Declare variable using var
+•	More about variable
+•	Let
+•	Const
+•	String Indexing
+•	Useful string methods
+•	Template Strings
+•	Null, undefined, BigInt, typeof
+•	Booleans and Comparison Operator
+•	Truthy and Falsy Values
+•	If else statement
+•	Ternary Operator
+•	&& || operator
+•	Nested if else
+•	If elseif else
+•	Switch statement
+•	While loop 
+•	While loop examples
+•	For loop
+•	For loop examples
+•	Break and continue keyword
+•	Do while loop
+
+Arrays in JavaScript
+•	Intro to arrays
+•	Push pop shift unshift
+•	Primitive vs reference data types
+•	Clone array & spread operator
+•	For loop
+•	use const for creating arrays
+•	While loop in array
+•	For of loop
+•	For in loop
+•	Array destructuring
+
+Objects in JavaScript
+•	Intro to objects
+•	Dot vs Bracket Notation
+•	Iterate objects
+•	Computed properties
+•	Spread operator in objects
+•	Object Destructuring
+•	Objects inside Array
+•	Nested Destructuring
+
+Functions in JavaScript
+•	Function declaration
+•	Function Expression
+•	Arrow Functions
+•	Function declarations are hoisted  (covered in great detail , later in this course)
+•	Function inside function
+•	Lexical Scope
+•	Block Scope Vs Function Scope
+•	Default Parameters
+•	Rest Parameters
+•	Parameter Destructuring
+•	Very brief intro to callback functions(covered in great detail , later in the course)
+•	Functions returning Functions 
+
+Very Important Array Methods
+•	Foreach method
+•	Map method
+•	Filter
+•	Reduce
+•	Sort
+•	Find
+•	Every
+•	Some
+•	Fill method
+•	Splice method
+
+More useful things 
+•	Iterables
+•	Sets
+•	Maps
+•	Object.assign
+•	Optional chaining
+
+Object Oriented JavaScript / Prototypal Inheritance
+•	Methods
+•	This keyword, Window object
+•	Call , apply and bind method
+•	Some warnings
+•	This inside arrow functions
+•	Short syntax for methods
+•	Factory functions & discuss some memory related problems
+•	First solution to that problem
+•	Why that solution isn’t that great
+•	What is __proto__ , [[prototype]]
+•	What is prototype
+•	Use prototype
+•	New keyword
+•	Constructor function with new keyword
+•	More discussion about proto and prototype
+•	Class keyword
+•	Example using class keyword
+•	Super keyword
+•	Method overriding
+•	Getters and setters
+•	Static methods and properties
+
+How JavaScript Works
+•	Global Execution context
+•	This and window in global execution context
+•	Hoisting
+•	Are let and const are hoisted ? What is a reference Error ? 
+•	Function execution context
+•	Scope chain and lexical environment
+•	Intro to closures
+•	Closure example 1
+•	Closure Example 2
+•	Closure Example 3
+
+DOM Tutorial
+•	HTML and CSS Crash course ( Around 30-40 minutes)
+•	Async vs defer
+•	Select elements using id
+•	querySelector
+•	textContent & innerText
+•	Change the styles of elements using js
+•	Get and set attributes
+•	Select multiple elements and loop through them
+•	innerHTML
+•	Deeply understand dom tree, root node , element nodes, text nodes
+•	classList
+•	Add new elements to page
+•	Create elements
+•	Insert adjacent elements
+•	Clone nodes
+•	More methods to add elements on page
+•	How to get the dimensions of the element
+•	Intro to events
+•	This keyword inside eventListener callback
+•	Add events on multiple elements
+•	Event object
+•	How event listener works
+•	Practice with events
+•	Create demo project
+•	More events
+•	Event bubbling
+•	Event Capturing
+•	Event delegation 
+•	Create Project using event delegation
+
+Asynchronous JavaScript
+•	Is JavaScript a synchronous or asynchronous programming language? 
+•	SetTimeout()
+•	SetTimeout() with 0 millisecond
+•	Callback Queue
+•	SetInterval and create little project with setInterval
+•	Understand callbacks in general
+•	Callbacks in asynchronous programming 
+•	Callback Hell and Pyramid of doom
+•	Intro to promises
+•	Microtask Queue
+•	Function that returns promise
+•	Promise and settimeout
+•	Promise.resolve and more about then method
+•	Convert nested Callbacks to flat code using promises
+•	Intro to Ajax, HTTP Request
+•	XHR requests
+•	Error handling in XHR requests
+•	XHR request Chaining 
+•	Promisifying XHR requests and chaining using then method
+•	Fetch API
+•	Error Handling in Fetch API
+•	Consume Promises with async and Await
+•	Split code into multiple files using ES6 modules.
+•	Congratulations 
+•	Now you know javascript in Great Details
+•	What next ? 

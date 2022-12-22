@@ -46,7 +46,7 @@ for (let row = 1; row <= num; row++){
     }
     console.log(result);
 }
-
+  
 
 
 

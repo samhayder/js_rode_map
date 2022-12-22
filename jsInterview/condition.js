@@ -1,20 +1,29 @@
 //01.	Write a program to find the maximum between two numbers.
 function findMaxNumber(num1,num2){
-    return Math.max(num1,num2);
+    if (num1 > num2){
+        console.log(`${num1} is maximum number.`);
+    } else {
+        console.log(`${num2} is maximum number.`);
+    }
 }
 
-console.log(findMaxNumber(25, 27));
-console.log(findMaxNumber(-31, -89));
-console.log(findMaxNumber(420, 15987));
+findMaxNumber(25, 27);
+findMaxNumber(-31, -89);
+findMaxNumber(420, 15987);
 
 //02.	Write a program to find the minimum between three numbers.
 function findMinNumber(num1,num2,num3){
-    return Math.min(num1,num2,num3);
+    if (num1 < num2 && num1 < num3){
+        console.log(`${num1} is minimum number.`);
+    } else if (num2 < num1 && num2 < num3){
+        console.log(`${num2} is minimum number.`);
+    } else {
+        console.log(`${num3} is minimum number.`);
+    }
 }
-
-console.log(findMinNumber(1, -2, 23));
-console.log(findMinNumber(11, 98, 73));
-console.log(findMinNumber(-7, -9, -99));
+findMinNumber(1, -2, 23);
+findMinNumber(11, 98, 73);
+findMinNumber(-7, -9, -99);
 
 //03. Write a program to check whether a number is even or not.
 function checkEvenNumber(num){
