@@ -1,0 +1,1120 @@
+1.	Write a program to print your name, date of birth, and mobile number.
+
+2.	Write a program to enter two numbers and perform all arithmetic operations.
+
+3.	Write a program to enter the length, and breadth of a rectangle and find its perimeter and area.
+
+4.	Write a Program to calculate the area of an equilateral triangle.
+
+5.	Write a program to calculate the perimeter and area of a circle with a given radius.
+
+6.	Write a program to find the third angle of a triangle if two angles are given.
+
+7.	Write a program that converts Centigrade to Fahrenheit.
+
+8.	Write a program that converts Fahrenheit to Centigrade.
+
+9.	Write a Program to enter marks of five subjects and calculate the total, average, and percentage.
+
+10.	Write a Program to enter Principal amount, Time, and Rate calculate simple interest.
+
+11.	Write a Program to enter Principal amount, Time, and Rate calculate compound interest.
+
+12.	Write a Program that takes minutes as input and displays the total number of hours and minutes.
+
+13.	Write a program that reads a first name, last name, and year of birth and displays the names and the year one after another sequentially.
+14.	Write a program to convert specified days into years, weeks and the rest of the days.
+
+15.	Write a program that accepts an employee's ID, totally worked hours of a month, and the amount he received per hour. Print the employee's ID and salary for a particular month.
+
+16.	Write a program to find the power of any number x ^ y.
+
+17.	Write a program to enter any number and calculate its square root.
+
+
+18.	Write a program to calculate a bike’s total consumption from the given total distance (integer value) traveled (in km) and spent fuel (in liters, float number – 2 decimal points.
+
+Conditional operator programming exercises (24 Problems)
+
+19.	Write a program to find the maximum between two numbers.
+
+20.	Write a program to find the minimum between three numbers.
+
+21.	Write a program to check whether a number is even or not.
+
+22.	Write a program to check whether a number is negative or positive or zero.
+
+23.	Write a program to enter the week number and print the day of the week.
+
+24.	Write a program to check whether a number is divisible by 5 or 11 or not.
+
+25.	Write a program to input any character and check whether it is the alphabet, digit, or special character.
+
+26.	Write a program to check whether you are eligible to make a NID Card or not.
+
+27.	Write a program to check whether the year is a leap year or not.
+
+28.	Write a program to input any alphabet and check whether it is a vowel or consonant.
+
+29.	Write a program to check whether the character is an alphabet or not.
+
+30.	Write a program to check the uppercase or lowercase alphabet.
+
+31.	Write a program to input the week number and print the weekday.
+
+32.	Write a program to input the month number and print the number of days in that month.
+
+33.	Write a program to check two integers whether they are equal or not.
+
+34.	Write a program to input the angles of a triangle and check whether a triangle is valid or not. 
+
+35.	Write a program to check whether the triangle is an equilateral, isosceles, or scalene triangle.
+
+36.	Write a program to find all roots of a quadratic equation. ****
+
+37.	Your younger brother studied in a primary school. He is fluent in the English alphabet. But don't know about the vowel and consonants. Your mother assigns you to teach him to know about which alphabets are vowel and consonant. ***
+
+38.	So you are going to make a program (using else if ladder) where your brother writes any alphabet and your program will tell him that it is a vowel or consonant.
+
+39.	Write a program to find the eligibility for admission to a professional course base on the following criteria:
+Marks in MATHS >= 65
+Marks in PHY >= 55
+Marks in CHEM >= 50
+Total in all three subjects => 180
+Or,
+Total in Math and physics >=140.
+
+40.	Write a program to read the temperature in centigrade and display a suitable message according to the temperature state below: 
+Temp < 0 then Freezing weather
+Temp 0-10 then very cold weather
+Temp 10-20 then cold weather 
+Temp 20-30 then Normal in Temp
+Temp 30-40 then it’s hot
+Temp >=40 then it’s very hot.
+
+41.	Write a program to read four values a, b, c, and d from the terminal and evaluates the value of (a+b) to (c-d), and print the result, if c-d is not equal to zero.
+
+42.	Write a program to input the basic salary of an employee and calculate its Gross salary according to the following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%.
+
+43.	Write a  program to input electricity unit charges and calculate the total electricity bill according to the given condition:
+For the first 50 units Rs. 0.50/unit
+For the next 100 units Rs. 0.75/unit
+For the next 100 units Rs. 1.20/unit
+For units above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill.
+
+**************************************
+Switch case programming exercises (8 Problems)
+
+44.	Write a program to print the day of the week name using a switch case.
+
+45.	Write a program to print the total number of days in a month using a switch case.
+
+46.	Write a program to check whether an alphabet is a vowel or consonant using a switch case.
+
+47.	Write a program to find the maximum between two numbers using a switch case.
+
+48.	Write a program to check whether a number is even or odd using a switch case.
+
+49.	Write a program to check whether a number is positive, negative, or zero using a switch case.
+
+50.	Write a program to find the roots of a quadratic equation using a switch case.
+
+51.	Write a program to create a Simple Calculator using a switch case.
+
+******************************************
+Loop and iteration programming exercises (39 Problems)
+
+52.	Write a program to Print your name 20 times using a loop.
+
+53.	Write a program to Print your name 20 times using a while loop.
+
+54.	Write a program to print your name 20 times using do while loop.
+
+55.	Write a program to print 1-10 using a for loop.
+
+56.	Write a program to print 1-10 using a while loop.
+
+57.	Write a program to print 1-10 using do while loop.
+
+58.	Write a program to Calculate the Sum of 1 to 10 numbers using a for loop.
+
+59.	Write a program to Calculate the Sum of 1 to 10 numbers using a while loop.
+
+60.	Write a program to Calculate the Sum of 1 to 10 numbers using do while loop.
+
+61.	Write an infinite loop. An infinite loop never ends. Condition is always true.
+
+62.	Write a program to print even numbers up to N.
+
+63.	Write a program to print odd numbers up to N.
+
+64.	Write a program to find the sum of all natural numbers between 1 to n.
+
+65.	Write a program to find the sum of all even numbers between 1 to n.
+
+66.	Write a program to print all natural numbers in reverse (from n to 1).
+
+67.	Write a program to print those numbers from 1 to 100 which are divisible by 7.
+
+68.	Write a program to print all alphabets from a to z.
+
+69.	Write a program to count the number of digits in a number.
+
+70.	Write a program to find the last digit of a given number.
+
+71.	Write a program to find the first digit of a given number.
+
+72.	Write a program to find the sum of the first and last digits of a number.
+
+73.	Write a program to swap the first and last digits of a number.
+
+74.	Write a program to calculate the sum of the digits of a number.
+
+75.	Write a program to calculate the product of the digits of a number.
+
+76.	Write a program to enter a number and print its reverse.
+e.x. The number 12345 should be written as 54321.
+
+77.	Write a program to check whether a number is a palindrome or not.
+
+78.	Write a program to find the frequency of each digit in a given integer.
+
+79.	Write a program to print the multiplication table of any number.
+
+80.	Write a program to enter a number and print it in words.
+
+81.	Write a program to print all ASCII characters with their values.
+
+82.	Write a program to find the power of a number using for loop.
+
+83.	Write a program to find all factors of a number.
+
+84.	Write a program to calculate the factorial of a number.
+
+85.	Write a program to find the HCF (GCD) and LCM of two numbers.
+
+86.	Write a program to check whether a number is a Prime number or not.
+
+87.	Write a program to print all Prime numbers between 1 to n.
+
+88.	Write a program to find the sum of all prime numbers between 1 to n.
+
+89.	Write a program to find all prime factors of a number.
+
+90.	Write a program to check whether a number is an Armstrong number or not.
+
+91.	Write a program to print all Armstrong numbers between 1 to n.
+
+92.	Write a program to check whether a number is a Perfect number or not.
+
+93.	Write a program to print all Perfect numbers between 1 to n.
+
+94.	Write a program to check whether a number is a Strong number or not.
+
+95.	Write a program to print all Strong numbers between 1 to n.
+
+96.	Write a program to print the Fibonacci series up to n terms.
+
+********************************************
+1D Array programming exercises (25 Problems)
+
+97.	Write a program to read and print elements of an array.
+
+98.	Write a C program to insert an element in an array.
+
+99.	Write a program to calculate the sum of 5 numbers using an array.
+
+100.	Write a program to calculate the sum of 5 numbers using an array (Numbers should be taken from the user).
+
+101.	Write a program to calculate the sum and average of N numbers using an array.
+
+102.	Write a program to find the maximum and minimum elements in an array.
+
+103.	Write a program to print the positive and negative numbers of an array.
+
+104.	Write a program to copy all elements from an array to another array.
+
+105.	Write a program to sort all the elements of an array and find the largest element from that array.
+
+106.	Write a program to find the largest element in an array.
+
+107.	Write a program to find the second largest element in an array.
+
+108.	Write a program to count the total number of negative, even, and odd numbers in an array.
+
+109.	Write a program to delete an element from an array at a specified position.
+
+110.	Write a program to count the frequency of each element in an array.
+
+111.	Write a program to print all unique elements in the array.
+
+112.	Write a program to count the total number of duplicate elements in an array.
+
+113.	Write a program to delete all duplicate elements from an array.
+
+114.	Write a program to merge two arrays to a third array.
+
+115.	Write a program to find the reverse of an array.
+
+116.	Write a program to put the even and odd elements of an array in two separate arrays.
+
+117.	Write a program to search for an element in an array.
+
+118.	Write a program to sort array elements in ascending or descending order.
+
+119.	Write a program to sort even and odd elements of an array separately.
+
+120.	Write a program to the left rotate an array.
+
+121.	Write a program to right rotate an array.
+
+122.	Suppose you have an Array with the size of 10. Your program will input all the array elements from the user. Now using a loop, traverse the array. During traversing, if the array contains an odd number in the odd index, take the odd value from that odd index from the array and make the summation of those numbers and replace that index value with 0. Print the summation and the array. The given sample is for your understanding. You must use your own sample.
+Example:
+Before the operation:
+Index	1	2	3	4	5	6	7	8	9	10
+Elements	1	3	6	5	7	9	11	8	3	8
+After the operation:
+Elements: 
+Elements	0	3	6	5	0	9	0	8	0	8
+Summation = 22
+
+123.	The scenario in front of any virtual Bank is like, Men and women standing in a single line. It looks so bad. Now separate men and women into different two line that looks like a gentle management system and develop the above program to find the majority of gender in the line.
+M = male 
+W = Women 
+Disarranged line scenario is like - M M W W M M M M W M
+M	M	W	W	M	M	M	M	W	M
+After operation: 
+M	M	M	M	M	M	M
+W	W	W
+
+124.	There’s a list of numbers in a row on the table. Your teacher is telling a number which is the addition of any of the two numbers from the given number list on the table. Your job is to find two numbers whose addition is equal to the number given by your teacher. If there’s no pair of numbers in a list that is equal to the given number by your teacher, then you will say “Sir, there’s no pair of numbers equal to your number” otherwise you will show that two numbers which addition is equal to the given number by your teacher. Write a program to solve the situation.
+
+125.	Suppose you have taken some values in an array of any size. For example, array1 = [5, 2, 3, 1, 9, 4]. Now your friend requests you to shift array values one cell to the right side (Right Shift). As per the request of your friend the array1 will be now [4, 5, 2, 3, 1, 9]. Now write a C program to satisfy the request of your friend by choosing an appropriate technique to shift the array values to the right. 
+Note: The array values and size will be defined by user. Sample Input: 9 3 8 2 7 1
+Sample Output: 1 9 3 8 2 7
+
+***********************************************
+2D Array programming exercises (17 Problems)
+
+126.	Write a program to print a 2D Array or a matrix.
+
+127.	Write a program to take input from the user of a 2D Array or a matrix.
+
+128.	Write a program to add and subtract two matrices.
+
+129.	Write a program to perform Scalar matrix multiplication.
+
+130.	Write a program to check whether two matrices are equal or not and find the multiply of that two matrices.
+
+131.	Write a program to find the sum of main diagonal elements of a matrix.
+
+132.	Write a program to find the sum of minor diagonal elements of a matrix.
+
+133.	Write a program to find the sum of each row and column of a matrix.
+
+134.	Write a program to interchange diagonals of a matrix.
+
+135.	Write a program to find the upper triangular matrix.
+
+136.	Write a program to find a lower triangular matrix.
+
+137.	Write a program to find the sum of the upper and lower triangular matrix.
+
+138.	Write a program to find the transpose of a matrix.
+
+139.	Write a program to find the determinant of a matrix.
+
+140.	Write a program to check the Identity matrix.
+
+141.	Write a program to check Sparse matrices.
+
+142.	Write a program to check Symmetric matrices.
+
+**************************************
+Star Pattern programming exercises (9 Problems)
+
+143.	Write a c program to print the Square star pattern.
+*****
+*****
+*****
+*****
+*****
+
+144.	Write a c program to print the Right Triangle Star pattern.
+*
+**
+***
+****
+*****
+
+145.	Write a program to make a pattern like below: 
+
+146.	Write a program to make a pattern like below:
+****
+***
+**
+*
+
+147.	Write a c program to print the Mirrored Right Triangle Star Pattern.
+
+148.	Write a c program to print the Pyramid Star Pattern. 
+
+149.	Write a program in C to display the pattern like a right angle triangle with a number.
+1
+1 2
+1 2 3
+2 3 4
+
+150.	Write a program to make such a pattern as a right-angle triangle with a number that will repeat a number in a row.
+1
+2 2
+3 3 3
+4 4 4
+
+151.	Write a program in C to make such a pattern like a right angle triangle with the number increased by 1.
+1
+2 3
+4 5 6
+8 9 10
+
+152.	Write a program in C to make such a pattern like a pyramid with numbers increased by 1.
+1 
+2   3 
+4   5  6 
+8 9 10
+
+153.	Write a program in C to make such a pattern like a pyramid with a number which will repeat the number in the same row.
+1
+2 2
+3 3 3
+4 4 4
+
+154.	Write a program to make a pattern like below: 
+
+**********************************
+Series Programming Exercise (8 Problems)
+
+155.	1 + 2 + 3 + 4 + 5 + 6 = ?
+
+156.	1 + 2 + 3 +  4 + 5 + 6 + ……………. + 20 = ?
+
+157.	+ 2 + 3 +  4 + 5 + 6 + ……………. + N = ?
+
+158.	  +   +   = ?
+
+159.	  +   +   = ?
+
+160.	  +   +   + ……………………. +   = ?
+
+161.	1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n  = ?
+Test Data :
+Input the number of terms : 5
+Expected Output :
+1/1 + 1/2 + 1/3 + 1/4 + 1/5 +
+Sum of Series up to 5 terms : 2.283334
+
+162.	9 + 99 + 999 + 9999 ……. =? 
+Test Data:
+Input the number of terms:5
+Expected Output:
+9 99 999 9999 99999
+The sum of the series = 111105
+
+**********************************
+String Programming Exercise (32 Problems)
+
+163.	Write a program to find the length of a string.
+
+164.	Write a program to copy one string to another string.
+
+165.	Write a program to concatenate two strings.
+
+166.	Write a program to compare two strings.
+
+167.	Write a program to convert lowercase string to uppercase and uppercase string to lowercase string.
+
+168.	Write a program to toggle the case of each character of a string.
+
+169.	Write a program to find the total number of alphabets, digits, or special characters in a string.
+
+170.	Write a program to count the total number of vowels, consonants, and words in a string.
+
+171.	Write a program to check whether a string is a palindrome or not.
+
+172.	Write a program to reverse the order of words in a given string.
+
+173.	Write a program to find the first and last occurrence of a character in a given string.
+
+174.	Write a program to search all occurrences of a character in a given string.
+
+175.	Write a program to count occurrences of a character in a given string.
+
+176.	Write a program to find the highest and lowest frequency character in a string.
+
+177.	Write a program to count the frequency of each character in a string.
+
+178.	Write a program to remove the first occurrence of a character from a string.
+
+179.	Write a program to remove the last occurrence of a character from a string.
+
+180.	Write a program to remove all occurrences of a character from a string.
+
+181.	Write a program to remove all repeated characters from a given string.
+
+182.	Write a program to replace the first occurrence of a character with another in a string.
+
+183.	Write a program to replace the last occurrence of a character with another in a string.
+
+184.	Write a program to replace all occurrences of a character with another in a string.
+
+185.	Write a program to find the first and occurrence of a word in a given string.
+
+186.	Write a program to search all occurrences of a word in a given string.
+
+187.	Write a program to count occurrences of a word in a given string.
+
+188.	Write a program to remove the first occurrence of a word from a string.
+
+189.	Write a program to remove the last occurrence of a word in a given string.
+
+190.	Write a program to remove all occurrences of a word in a given string.
+
+191.	Write a program to trim leading white space characters from a given string.
+
+192.	Write a program to trim trailing white space characters from a given string.
+
+193.	Write a program to trim both leading and trailing white space characters from a given string.
+
+194.	Write a program to remove all extra blank spaces from a given string.
+
+*****************************************
+Function Programming Exercise (11 Problems)
+
+195.	Write a program to calculate the sum of two numbers using a user-defined function.
+
+196.	Write a program to calculate the sum of two numbers using a user-defined function [Input must be taken from user].
+
+197.	Write a program to make a calculator using a user-defined function.
+
+198.	Write a program to find a cube of any number using a user-defined function.
+
+199.	Write a program to find the diameter, circumference, and area of a circle using a user-defined function.
+
+200.	Write a program to find maximum and minimum numbers between two numbers using a user-defined function.
+
+201.	Write a program to check whether a number is even or odd using a user-defined function.
+
+202.	Write a program to check whether a number is prime, Armstrong, or perfect number using a user-defined function.[Must be used 3 individual functions to check prime, Armstrong, or perfect number. ].
+
+203.	Write a program to find all prime numbers, strong numbers, and Armstrong numbers between a given interval.[Must be used 3 individual functions for prime, strong, and Armstrong numbers. ].
+
+204.	Write a program to add two matrices or 2D arrays using a function.
+
+205.	Write a program to do addition, subtraction, multiplication, and division between two matrix or 2D arrays using a function. [Must be used 4 functions for addition, subtraction, multiplication and division].
+
+****************************************
+Pointer Programming Exercise (6 Problems)
+
+206.	Write a program to create, initialize and use pointers.
+
+207.	Write a program to add two numbers using pointers.
+
+208.	Write a program to swap two numbers using pointers.
+
+209.	Write a program to input and print array elements using a pointer.
+
+210.	Write a program to copy one array to another using pointer.
+
+211.	Write a program to add and multiply two matrices using pointers.
+
+************************************
+File handling exercises (3 Problems)
+
+212.	Write a program to create a file and write contents, and save and close the file.
+
+213.	Write a program to read file contents and display them on the console.
+
+214.	Write a program to read numbers from a file and write even, odd and prime numbers to separate files. 
+
+
+**********************************************
+**********************************************
+Language Fundamentals 
+
+* What is the difference between null and undefined?
+* What is undefined in JavaScript?
+* What will be the output of undefined==null and undefined===null? Why?
+* Can you explicitly assign ‘undefined’ to a variable?
+* let i=undefined; [show example]
+
+* What is the difference between function scope and block scope?
+* What is hoisting in JavaScript?
+* How does block scope work?
+* What is the scope of a variable?
+* What is automatic semicolon insertion (ASI)?
+* Should you terminate all lines by a “;”?
+* function test(){
+    return
+        {
+            a:5
+        }
+}
+const obj=test();
+console.log(obj);
+Why this code is returning undefined in spite of function returning a valid object literal?
+Can ‘use strict’ statement or the strict mode change the behaviour of ASI?
+
+Explain the difference between Rest and Spread?
+Can we use arguments object in arrow function?
+Which is the best way to create new arrays with assignment?
+How can you handle the “n” number of parameters passed to a function ? or create a function which can take any number of parameters and returns sum or max or any other such calculative values.
+Can the rest operator be placed anywhere in the function parameter list? Or
+function test(...a,b){
+//statements
+}
+Is this piece of code valid? Give the reason.
+
+When do you get Infinity or -Infinity as output?
+How will you put a validation for positive or negative Infinity?
+What will be the output of this code?
+Code:
+console.log(1/0);
+
+When do you get NaN as output?
+What will be the output of the below statement?
+console.log(NaN==NaN);
+What is the difference between isNaN() and isFinite() method?
+
+Explain must know points of arrow function.
+Explain the syntactical features of arrow function.
+Why “this” does not work in arrow function?
+Explain output of following code with reason.
+const obj={
+     method:()=>{
+                       console.log(this);
+     }
+}
+How can you handle arguments object like functionality in arrow function?
+Can you write IIFE with arrow function syntax?
+
+How does closure work in JavaScript ?
+How can you access private variable or function outside the scope?
+Explain the advantage of closure?
+
+How can sum(5)(6) return 11?
+What is function currying?
+const multiplication=a=>b=>c=>return a*b*c - What will this statement do? Explain in detail.
+Explain practical usage of function currying.
+
+Iterables and Iterators
+What is the purpose of the iterator?
+How do you create an iterator?
+Explain a practical use of an iterator?
+
+Generators
+What are generator functions? Explain the syntax.
+Which is the right syntax function* () { } or function *() {}?
+Explain all methods of generator objects.
+Explain the use of “yield*”
+Can you prevent return() from terminating the generator?
+
+Memory Management and Garbage Collection
+How does GC work in JS?
+Explain “Mark-and-Sweep” algorithm’s pattern
+Which situation can create a memory leak?
+
+How do you handle errors in JavaScript code?
+When do you need try...catch ?
+How can you generate an error ?
+Can you generate SyntaxError or ReferenceError kind of errors ?
+What is the purpose of the finally block ?
+How can you refer to the name or description of error ?
+Can we have finally without a catch block as well ?
+Arrays 
+Total question count for this section - 37
+
+Explain array & traversal in array ?
+What is the difference between for...in and for...of ?
+What will be the output of the below code ?
+=>
+let arr = ["ES5","ES6","ES7","ES8"];
+arr.forEach(function(element,index){
+  console.log(element,index);
+  if (index==2){
+      break;
+  }
+})
+What will be the output of below statements ?
+=>
+let arr=[7,9,0];
+console.log(arr[arr.length]);
+
+Add, Remove, Insert, Replace elements in array ?
+What is the difference between push() and unshift() method?
+What is the difference between pop() and shift()?
+How can you insert an element at a given position?
+How can you remove a specific element?
+What does splice() return?
+If there is no element removed then what will splice() method return?
+let arr=["One","Two","Three","Four","Five"];
+console.log(arr.splice(2,0,"New"));
+
+How do you perform search in array ?
+What is the difference between find() and filter() method?
+If there is no value to return, what will findIndex() return?
+What is the difference between indexOf() and includes() method?
+How will you search multiple values in an array?
+What will be the output of this code?
+let arr=["One","Two","Three","Four","Five"];
+console.log(arr.lastIndexOf("Abcd"));
+
+What is the use of map() method ?
+Find the length of each element in a new array.
+Find the square root of every element and store it in a new array.
+
+There is an array called products as shown here
+let products=[
+     {pCode:1,pName:"Apple"},
+     {pCode:2,pName:"Banana"},
+     {pCode:3,pName:"Grapes"},
+     {pCode:4,pName:"Oranges"}
+]
+Get all product names (i.e pNames) in a new array
+
+How to flatten a 2D array ?
+How will you flatten an array i.e e.g converting a 2 dimensional array into single dimension ?
+Get sum of a key field of an object literal & Then find total salary of employees
+const employees=[
+       {eNo:1001,salary:3000},
+       {eNo:1002,salary:2200},
+       {eNo:1003,salary:3400},
+       {eNo:1004,salary:6000}
+]
+Find avg value of all elements of an array?
+Find the sum or product of all elements?
+What is the difference between reduce() and reduceRight()?
+
+How can you sort an array ?
+What will be the output in case an array has “undefined” while sorting the values ?
+How will sort an object literal ?
+How will you sort a numeric array?
+Sort all values of the array in descending order.
+
+Explain Array destructuring ?
+What is the destructuring assignment?
+Swap values using destructuring
+What will be the output of this code?
+let [a,b,c] = [5,,7];
+console.log(a,b,c);
+How will you set a default value while destructuring an array?
+String 
+Total question count for this section - 14
+
+String basics, [UTF -16] - \u - unicode
+Explain various ways to declare a string variable
+How will you deal with unicode characters?
+Show the syntax to display long unicode characters.
+
+ES6 Template Literal (String)
+What is a template literal?
+How will you display a value or an expression inside template string?
+What is the advantage of using template string?
+
+“.length” property and search methods
+Explain the indexOf() and lastIndexOf() method with syntax.
+What is the difference between search() and indexOf() method?
+What will be the output of the below given code? Explain with reason.
+let str="This is a test";
+console.log(str.indexOf("is",5));
+console.log(str.lastIndexOf("is",1));
+
+“.length” property and search methods
+What will be the output of below code
+let str=”Hello World”
+console.log(str.slice(-5,-2));
+
+What is the difference between substr() and substring()?
+What will be the output of the below given code? Explain with reason.
+let str="This is a test";
+console.log(str.substring(-5));
+
+What will be the output of the below given code? Explain with reason.
+let str="This is a test";
+console.log(str.substring(3,3));
+
+Explain the output of below code
+console.log(str.charAt());
+Date and Time 
+Total question count for this section - 11
+
+Date & Time Basics
+Explain different ways of creating date/time object.
+
+What will be the output of the below code
+const dt = new Date(2020,08,23);
+console.log(dt);
+Explain reason - why is it showing Sep instead of August
+
+Explain various formats of ISO standard followed by JS
+Year - YYYY
+Month - MM
+`YYYY-MM-DDTHH:mm:ss.sssZ`
+
+Date Methods
+Get Character month .
+let dt = new Date();
+let arrMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(arrMonths[dt.getMonth()]);
+
+Find the date before 50 days of the given date.
+let dt = new Date();
+dt.setDate(dt.getDate() - 50);
+console.log( dt);
+
+What will be the output if you add 35 as date in Date() constructor e.g.
+let dt = new Date(2020,07,35);
+console.log( dt);
+[Autocorrection in the date, even if it is leap year, february, it will take care of all such validations as well]
+
+Time Methods
+Calculate the date diff. In days
+let dt = new Date(2020,7,25);
+let dt1 = new Date(2020,7,23);
+let n = dt.getTime()-dt1.getTime();
+
+n=(n/1000)/3600;
+
+console.log(n);
+
+How can you change hours or minutes in time?
+OOJS 
+Total question count for this section - 28
+
+What is object literal?
+Can you have dynamic keys with object literal?
+How can you add read-only properties to an object?
+What is property value short hand with object literal?
+What will be the output of this code
+
+let obj={a:'First'};
+let obj1 = obj;
+obj1.a="Second";
+console.log(obj.a);
+
+Explain the reason why?
+
+How can we create a clone or separate copy of an object literal?
+
+What is “this” object?
+What will be the output of this code if you run in the browser and why?
+function test(){
+     console.log(this);
+}
+test();
+
+What is the context of “this” inside arrow function? Or what will be the output of this code
+let obj={
+      test:()=>{
+         console.log(this);
+       }
+}
+obj.test();
+
+What is the purpose of call, apply and bind()?
+What is the difference between call, apply and bind()?
+What will be the output of this code? Or can you assign value to “this” object with assignment operator i.e. “=”?
+const obj={
+       a:6
+}
+function test(){
+       this=obj;
+}
+test();
+
+Class,Class expression, static members.
+How can you create a class?
+When does constructor() called?
+Can we have dynamic property or method names in a class?
+What is a class expression?
+What are static members in a class? What is the purpose of defining them as static?
+How can you call another static method from a class?
+
+Inheritance,Subclassing and Extending built-in class
+How can you inherit a class?
+What is subclassing?
+What is the purpose of super keyword?
+How will you override a method?
+How can you extend a built-in class?
+
+Destructuring Object Literal
+Explain a practical scenario of object literal destructuring ?
+Explain the output of this code
+const { a=90, b } = { };
+console.log(a,b);
+
+Class Accessors - getter & setter methods
+What is a getter or setter method?
+Web Components 
+Total question count for this section - 28
+
+Introduction
+Custom HTMLElement - First Step of web component
+
+Explain what is a web component and how can you create it?
+
+Problem without shadow DOM
+Shadow DOM to the rescue
+
+What is shadow DOM? Explain the need for it.
+How do you add a component to a shadow DOM?
+
+HTML <template> - Must know for web components
+What is the purpose of the <template> tag?
+
+Creating component template
+Dynamic Data with Custom Attributes
+Life cycle callbacks
+
+Changing Attribute on Event
+What is the observerdAttributes() method’s functionality?
+When will the attributeChangedCallback() method be invoked?
+How can you improve rendering with the help of attributeChangedCallback()?
+
+Deleting Component - disconnectedCallback()
+Explain the purpose of disconnectedCallback() life cycle method.
+
+Setter method - the right approach
+The slot element
+What is light DOM?
+How can you manage or display the content placed inside the custom HTML element?
+DOM & Web 
+Total question count for this section - 66
+
+Understanding DOM
+What is DOM or DOM API?
+What is a DOM Tree?
+What do you mean by DOM Manipulation?
+
+What is the difference between window & document object ?
+What is the difference between window and document ?
+What is DOM [Document Object Model] or DOM API ?
+What is BOM [Browser Object Model] ?
+Explain the difference between DOM and BOM ?
+Which is the global object in browser ?
+How will we check the width and height of window ?
+How will you get hostname or value typed in address bar ?
+
+How will you handle timer based events ?
+Explain the difference between setTimeout() and setInterval() ?
+Why can’t we write document.setTimeout() or document.setInterval() ?
+How can you stop a timer ?
+How will you create a digital clock ?
+
+What is event bubbling and event capturing ?
+Which is the default propagation path ?
+How can you stop the event propagation ?
+How can you change the default propagation path ?
+How can you get the reference of element on which event is fired ?
+Practical question :- What will be the output of code & why ?
+
+What is Event Delegation ?
+How event bubbling or capturing is useful in the practical programming world ?
+Which property can be used to check the element type on which the event is triggered ?
+How can you get value of the element which raised the event ?
+
+How can you navigate through DOM ?
+What is a node in DOM tree? Explain different types of nodes?
+How can you access next same level element for a given node element?
+What is the difference between childeNodes and children property?
+How can you check whether an element has child nodes or not?
+What is the purpose of DOM navigation?
+What will be the output of below given statement - element.lastChild.nextSibling
+
+getElementBy<id,tags,class & name>()
+Can you use document.getElementById() & element.getElementById() ?
+What does the getElementsByTagName() return ?
+What is the difference between getElementsByClassName() & getElementsByName() ?
+
+querySelector() & querySelectorAll()
+Explain the difference between querySelector() & querySelectorAll()
+How can you search elements using pseudo classes?
+Between getElementBy methods and querySelector methods which is better to use?
+
+Event Basics
+Explain various ways to configure an event with HTML elements.
+Explain syntax of addEventListener() method.
+What is an event object?
+
+MouseEvent
+How will you disable right click on an element?
+How can you check whether a special key is pressed or not while an event is generated?
+How do you check mouse button value while an event is generated?
+For ctrl key and cmd on mac - how will you right the condition to check the key press.
+
+ClientX/Y Vs. PageX/Y Vs. ScreenX/Y - Coordinates
+Explain the difference between clientX/Y and pageX/Y.
+Explain the difference between clientX/Y and screenX/Y.
+
+Keyboard Events
+How can you check if control and Z is pressed or not?
+What does event.code return ?
+Explain the difference between event.code and event.key ?
+
+Input Element Events
+What is the difference between onblur and onchange event?
+How will you handle events of checkbox and radio buttons [onchange/click]?
+Differentiate onkeypress/onkeyup and oninput event.
+Which event you prefer with select [i.e. drop down list]?
+How will you get the text value of selected item from a select element i.e. a drop down list?
+
+oncut,oncopy & onpaste events
+Explain about cut,copy and paste events.
+How can you stop an event of cut, copy or paste for an element?
+Asynchronous JS 
+Total question count for this section - 37
+
+What is a callback function ?
+What is an Asynchronous process?
+What is the meaning of callback hell or pyramid of doom?
+
+What is a Promise ?
+How will you configure a process which should be executed at the end of promise resolve or reject ?
+What is chaining the promise? Explain the syntax.
+
+What will be the output of the given code?
+const pr = new Promise((resolve,reject)=>{
+resolve("Over");
+setTimeout(()=>{
+resolve("Again");
+},2000)
+})
+
+pr.then((msg)=>{
+console.log(msg);
+return pr;
+}).then((msg)=>{
+console.log(msg);
+})
+
+What is the status of promise by default?
+What will be the status of promise when resolved or rejected?
+
+Explain Promise.all() Vs. Promise.allSettled() Vs. Promise.race()?
+What will be the output if the iterable is not a promise inside all() method arguments,e.g as shown below where “p2” is not a promise?
+const p1 = new Promise((resolve,reject)=>{
+setTimeout(()=>{
+resolve("Promise1");
+},2000)
+})
+const p2 = "Normal string";
+const p3 = new Promise((resolve,reject)=>{
+setTimeout(()=>{
+resolve("Promise3");
+},2000)
+})
+
+Promise.all([p1, p2,p3]).then((prMsgs) => {
+console.log(prMsgs);
+}).catch((err)=>{
+console.log(err);
+})
+
+How will you handle rejected multiple promises in the most efficient way?
+Explain the purpose of Promise.race() method.
+What will be the output of empty iterable if given as a parameter inside the race() method as shown in this code ?
+const obj = Promise.race([]);
+console.log(obj);
+
+setTimeout(()=>{
+console.log(obj);
+},2000);
+
+Explain functionality of async/await ?
+Can you write await without async?
+Do you need to return a promise from an async function?
+Can you have an async IIFE?
+Which is the best way to handle errors with await?
+Explain the syntax of Promise.all() with async/await?
+
+AJAX & XMLHTTPRequest (XHR)
+What is AJAX?
+How will you set a timeout with an XHR request?
+How can you set the data format for response?
+Explain “readyState” property of XHR.
+Explain the “onreadystatechange” event.
+How can you force the XHR request to stop the execution?
+When is the “load” method called?
+How will you set HTTP headers? Explain the sequence.
+Explain different ways of getting response header values?
+
+Fetch API
+Explain the fetch API functionality.
+How will you make a DELETE request with fetch API?
+
+Async Iterators/Generators [Symbol.asyncIterator]
+What is Symbol.asyncIterator?
+Can we use spread operator with async iterator e.g. [...obj]?
+How will you handle the async iterator using generator function syntax?
+Map, Set, WeakMap & WeakSet (ES6 Data structure) 
+Total question count for this section - 14
+
+Map
+What are the advantages of using Map over objects?
+How will you iterate through Map ?
+Can you assign key/values with this syntax ? Explain the reason for the answer - map[‘key’]=value
+How can you convert simple objects to Map?
+How can you convert a Map into simple objects?
+How will you remove an item or all items from Map?
+Set
+What is the difference between Map and Set?
+How will you remove specific values from Set?
+What will entries() method with Set will return?
+
+WeakMap & WeakSet
+Explain diff. Between Map and WeakMap
+Explain diff. Btn Set and WeakSet.
+Debugging Techniques 
+Total question count for this section - 16
+
+Introduction to debugging & Developer Tool
+Explain debugging & run-time v/s design-time errors
+What is a developer tool?
+
+Understanding Developer Tool
+What is a responsive web design(RWD)?
+What is a breakpoint & How do you place it?
+
+Debugging Pane : Watch, Call Stack & Scope
+How does the watch tool help in debugging?
+What is stack trace?
+
+Debugging Pane : Code navigation
+How to navigate through code while debugging?
+
+Event Listener Breakpoints
+What are event listeners?
+
+Conditional & Programmatic breakpoints
+How does the programmatic breakpoint work?
+How to place a conditional breakpoint?
+
+What are DOM breakpoints?
+How do the DOM breakpoints work?
+
+XHR/fetch breakpoints
+How does XHR/Fetch breakpoints work?
+
+Exception Breakpoints
+How to debug the code with exceptions?
+
+The "console" Object Methods
+Explain different console object methods
+
+console.time() & related methods
+What does the console.time() method do?
+How to check the current execution time?
+

@@ -199,12 +199,35 @@ for (let i = 97; i <= 122; i++){
 }
 
 //18. Write a program to count the number of digits in a number.
+let userInput = 10;
+let countDigits = (userInput, count = 0) => {
+    if (userInput){
+        return countDigits(Math.floor(userInput / 10), ++count);
+    }
+
+    return count;
+}
+console.log("Count digits " + countDigits(954));
+console.log("Count digits " + countDigits(2587413));
+console.log("Count digits " + countDigits(78402));
+
+//19. Write a program to find the first digit of a given number.
+function findFirstDigit(num){
+    // Find total number of digits - 1
+    let digit =  parseInt(Math.log(num) / Math.log(10));
+
+    // Find first digit
+    num = parseInt(num / Math.pow(10, digit));
+
+    // Return first digit
+    return num;
+}
+console.log("First digit " + findFirstDigit(9));
+console.log("First digit " + findFirstDigit(891));
+console.log("First digit " + findFirstDigit(2913));
 
 
-//19. Write a program to find the last digit of a given number.
-
-
-//20. Write a program to find the first digit of a given number.
+//20. Write a program to find the last digit of a given number.
 
 
 //21. Write a program to find the sum of the first and last digits of a number.
