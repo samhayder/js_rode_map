@@ -162,7 +162,7 @@ console.log(removeFirstChar("thet", 't'));
 
 //*17. Write a program to remove the last occurrence of a character from a string.
 function removeLastChar(str, searchStr){
-    let index = str.indexOf(searchStr);
+    let index = str.lastIndexOf(searchStr);
 
     if (index === -1){
         return str;
@@ -170,33 +170,65 @@ function removeLastChar(str, searchStr){
     return str.slice(0,index) + str.slice(index +  searchStr.length);
 }
 console.log(removeLastChar("the dog is the cat", 'the'));
+console.log(removeLastChar("thet", 't'));
 
-//18. Write a program to remove all occurrences of a character from a string.
+//*18. Write a program to remove all occurrences of a character from a string.
+function removeAllChar(str, searchStr){
+    return str.replaceAll(searchStr,'');
+}
+console.log(removeAllChar("the all the most the seen", "the"));
 
 //19. Write a program to remove all repeated characters from a given string.
+function removeDuplicateChar(str){
+    let arrStr = str.split("");
+    let result = [];
+
+    for (let i = 0; i <= arrStr.length; i++){
+        if (str.indexOf(arrStr[i]) === str.lastIndexOf(arrStr[i])){
+            result.push(arrStr[i]);
+        }
+    }
+    return result.join("");
+}
+console.log(removeDuplicateChar("abcdabc"));
 
 //20. Write a program to replace the first occurrence of a character with another in a string.
+function  replaceFirstChar(str, oldStr, newReplaceStr){
+    return str.replace(oldStr, newReplaceStr);
+}
+console.log(replaceFirstChar("day the day", "day", "Ok"));
 
 //21. Write a program to replace the last occurrence of a character with another in a string.
+function  replaceLastChar(str, changeStr, replaceStr){
+    let lastIndex = str.lastIndexOf(changeStr);
+
+    if (lastIndex === -1){
+        return str;
+    }
+
+    return str.slice(0, lastIndex) + replaceStr + str.slice(lastIndex + replaceStr.length);
+}
+console.log(replaceLastChar("sam is sam, zam is sam", "is", "vs"));
 
 //22. Write a program to replace all occurrences of a character with another in a string.
+function replaceAllChar(str, changeStr, replaceStr){
+    return str.replaceAll(changeStr,replaceStr);
+}
+console.log(replaceAllChar("joy and joy", "joy", "Ajoy"));
 
-//23. Write a program to find the first and occurrence of a word in a given string.
+//23. Write a program to trim leading white space characters from a given string.
+function trimLeading(str){
+    return str.trimStart()
+}
+console.log(trimLeading("  admin   "));
+//24. Write a program to trim trailing white space characters from a given string.
+function trimTrailing(str){
+    return str.trimEnd();
+}
+console.log(trimTrailing("    adminEnd     "));
 
-//24. Write a program to search all occurrences of a word in a given string.
-
-//25. Write a program to count occurrences of a word in a given string.
-
-//26. Write a program to remove the first occurrence of a word from a string.
-
-//27. Write a program to remove the last occurrence of a word in a given string.
-
-//28. Write a program to remove all occurrences of a word in a given string.
-
-//29. Write a program to trim leading white space characters from a given string.
-
-//30. Write a program to trim trailing white space characters from a given string.
-
-//31. Write a program to trim both leading and trailing white space characters from a given string.
-
-//32. Write a program to remove all extra blank spaces from a given string.
+//25. Write a program to trim both leading and trailing white space characters from a given string.
+function trimStr(str){
+    return str.trim();
+}
+console.log(trimStr("    adminTrim    "));
