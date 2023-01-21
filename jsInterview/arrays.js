@@ -1,65 +1,120 @@
-//01. Write a function to check whether an `input` is an array or not. Go to the editor
-/* Test Data :
-console.log(is_array('w3resource'));
-console.log(is_array([1, 2, 4, 0]));
-false
-true */
+//01. Write a to check whether an `input` is an array or not.
+function isArray(input){
+  return (typeof input === 'object') ? true : false;
+}
+console.log(isArray('w3resource'));
+console.log(isArray([1, 2, 4, 0]));
+/* => false */
+/* => true */
 
-//02. Write a JavaScript function to clone an array. Go to the editor
-/* Test Data :
-console.log(array_Clone([1, 2, 4, 0]));
-console.log(array_Clone([1, 2, [4, 0]]));
-[1, 2, 4, 0]
-[1, 2, [4, 0]] */
+//02. Write a function to clone an array.
+function arrayClone(arr){
+  //return arr.slice(1); //This is one type of solve
+  const arr2 = [... arr];
+  return arr2;
+}
+console.log(arrayClone([1, 2, 4, 0]));
+console.log(arrayClone([1, 2, [4, 0]]));
+/* => [1, 2, 4, 0] */
+/* => [1, 2, [4, 0]] */
 
-//03. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. Go to the editor
-/* Test Data :
-console.log(first([7, 9, 0, -2]));
-console.log(first([],3));
-console.log(first([7, 9, 0, -2],3));
-console.log(first([7, 9, 0, -2],6));
-console.log(first([7, 9, 0, -2],-3));
-Expected Output :
-7
-[]
-[7, 9, 0]
-[7, 9, 0, -2]
-[] */
+//03. Write a function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+function  getFirstElgOfArr(arr,arrPosition){
+  if (!arrPosition || arrPosition < 0) return arr[0];
 
-//04. Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array. Go to the editor
-/* Test Data :
-console.log(last([7, 9, 0, -2]));
-console.log(last([7, 9, 0, -2],3));
-console.log(last([7, 9, 0, -2],6));
-Expected Output :
--2
-[9, 0, -2]
-[7, 9, 0, -2] */
+  return arr.slice(0,arrPosition);
+}
+console.log(getFirstElgOfArr([7, 9, 0, -2]));
+console.log(getFirstElgOfArr([],3));
+console.log(getFirstElgOfArr([7, 9, 0, -2],3));
+console.log(getFirstElgOfArr([7, 9, 0, -2],6));
+console.log(getFirstElgOfArr([7, 9, 0, -2],-3));
+/* => 7 */
+/* => [] */
+/* => [7, 9, 0] */
+/* => [7, 9, 0, -2] */
+/* => [] */
 
-//05. Write a simple JavaScript program to join all elements of the following array into a string. Go to the editor
-/* Sample array : myColor = ["Red", "Green", "White", "Black"];
-Expected Output :
-"Red,Green,White,Black"
-"Red,Green,White,Black"
-"Red+Green+White+Black" */
+//04. Write a function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array. 
+function getLastElgOfArr(arr, arrPosition){
+  if (!arrPosition || arrPosition < 0) return arr[arr.length - 1];
 
-//06. Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8. Go to the editor
+  return  arr.slice(Math.max(arr.length - arrPosition, 0));
+}
+console.log(getLastElgOfArr([7, 9, 0, -2]));
+console.log(getLastElgOfArr([7, 9, 0, -2],3));
+console.log(getLastElgOfArr([7, 9, 0, -2],6));
+/* => -2 */
+/* => [9, 0, -2] */
+/* => [7, 9, 0, -2] */
 
-//07. Write a JavaScript program to sort the items of an array. Go to the editor
-/* Sample array : var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
-Sample Output : -4,-3,1,2,3,5,6,7,8 */
+//05. Write a simple program to join all elements of the following array into a string.
+function joinArray(arr,separator){
+  return !separator ? arr.join() : arr.join(separator);
+}
+console.log(joinArray(["Red", "Green", "White", "Black"]));
+console.log(joinArray(["Red", "Green", "White", "Black"], ',' ));
+console.log(joinArray(["Red", "Green", "White", "Black"], "+" ));
+/* => "Red,Green,White,Black" */
+/* => "Red,Green,White,Black" */
+/* => "Red+Green+White+Black" */
 
-//08. Write a JavaScript program to find the most frequent item of an array. Go to the editor
-/* Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
-Sample Output : a ( 5 times ) */
+//06. Write a program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
+function separateEvenNumber(str){
+  str.toString().split('');
+  let result = [];
 
-//09. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'. Go to the editor
+  for (let i = 0; i < str.length; i++){
+    if (str[i] % 2 === 0 && str[i-1] % 2 === 0){
+      result.push('-', str[i])
+    }else {
+      result.push(str[i]);
+    }
+  }
+  return result.join('');
+}
+console.log(separateEvenNumber('025468'));
+console.log(separateEvenNumber('152028'));
+/* => 0-254-6-8 */
+/* => 152-0-2-8 */
 
-//10. Write a JavaScript program which prints the elements of the following array. Go to the editor
-/* Note : Use nested for loops.
-Sample array : var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
-Sample Output :
-"row 0"
+//07. Write a program to sort the items of an array.
+function sortNumberArray(arr){
+  return arr.sort(function(min,max){return min-max});
+}
+console.log(sortNumberArray([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]));
+/* => [-4, 1, 2, 3, 3,5, 6, 7, 8] */
+
+//08. Write a program to find the most frequent item of an array.
+function mostFrequent(arr,searchItem){
+  let filterArray = arr.filter(i => i === searchItem)
+  return `${searchItem} ( ${filterArray.length} times)`
+  
+}
+console.log(mostFrequent([3,3,3,3,3,2,3,2,4,9,3,'a'],3));
+/* => 3 ( 7 times) */
+
+//09. Write a program which accept a string as input and swap the case of each character.
+function swapCharacter(str){
+  //return str.split('').map( item => item == item.toUpperCase() ? item.toLocaleLowerCase() : item.toUpperCase() ).join('');
+
+  return str.split('').map(item => item.match(/[A-Z]/g) ? item.toLowerCase() : item.toUpperCase() ).join('');
+}
+console.log(swapCharacter('The Quick Brown Fox'));
+/* => 'tHE qUICK bROWN fOX' */
+
+//10. Write a program which prints the elements of the following array.Note : Use nested for loops.
+function nestedArray(arr){
+  for (let i in arr){
+    console.log("row " + i);
+
+    for (let j in arr[i]){
+      console.log(" " + arr[i][j]);
+    }
+  }
+}
+nestedArray( [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14]] )
+/* "row 0"
 " 1"
 " 2"
 " 1"
@@ -68,9 +123,23 @@ Sample Output :
 ------
 ------ */
 
-//11. Write a JavaScript program to find the sum of squares of a numeric vector. Go to the editor
+//11. Write a program to find the sum of squares of a numeric vector.
+function sumOfSquareArray(arr){
+  return arr.reduce((sum,item) => sum + Math.pow(item,2));
+}
+console.log(sumOfSquareArray([0,1,2,3,4]));
+console.log(sumOfSquareArray([15,20,38,99]));
+/* => 30 */
+/* => 11660 */
 
-//12. Write a JavaScript program to compute the sum and product of an array of integers. Go to the editor
+//12. Write a program to compute the sum and product of an array of integers.
+function productCompute(arr){
+  let sum = arr.reduce((sum,product) => sum + product );
+  let product = arr.reduce((sum,product) => sum * product);
+
+  return `Sum: ${sum} & Product: ${product}`;
+}
+console.log(productCompute([1,2,3,4,5,6]));
 
 //13. Write a JavaScript program to add items in an blank array and display the items. Go to the editor
 /* Sample Screen :
