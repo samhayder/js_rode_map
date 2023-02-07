@@ -140,225 +140,346 @@ function productCompute(arr){
   return `Sum: ${sum} & Product: ${product}`;
 }
 console.log(productCompute([1,2,3,4,5,6]));
+/* => Sum: 21 & Product: 720 */
 
-//13. Write a JavaScript program to add items in an blank array and display the items. Go to the editor
-/* Sample Screen :
-add elements in an blank array */
+//*13. Write a program to add items in an blank array and display the items.
 
-//14. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity). Go to the editor
+//14. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+function removeDuplicateItem(arr){
+  return arr.filter((value,index) => {
+    return arr.indexOf(value) == index
+  })
+}
+console.log(removeDuplicateItem([1, 1, 2, 2, "a", "a", "A", 3, 3]));
+console.log(removeDuplicateItem(['a',1,'A',2,3,5,3,'a']));
+/* => [ 1, 2, 'a', 'A', 3 ] */
+/* => [ 'a', 1, 'A', 2, 3, 5 ] */
 
-//15. We have the following arrays : Go to the editor
-/* color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
-o = ["th","st","nd","rd"]
-Write a JavaScript program to display the colors in the following way :
-"1st choice is Blue ."
-"2nd choice is Green."
-"3rd choice is Red."
-- - - - - - - - - - - - -
-Note : Use ordinal numbers to tell their position. */
+//15. Write a program to display, use ordinal numbers to tell their position.
+function setOrdinalNumber(arr){
+  const ordinal = ['th','st','nd','rd'];
+  let counter = 1;
+  let item = '';
 
-//16. Write a JavaScript program to find the leap years in a given range of years. Go to the editor
+  for (let i in arr){
+    if (counter < 4){
+      item += `${counter}${ordinal[i]} choice is ${arr[i]}. \n`;
+      counter++;
+    }else {
+      item += `${counter}${ordinal[0]} choice is ${arr[i]}. \n`;
+      counter++;
+    }
+  }
+  return item;
+  
+}
+console.log(setOrdinalNumber(["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"]));
+/* 1th choice is Blue .
+2st choice is Green.
+3nd choice is Red.
+4th choice is Orange.
+5th choice is Violet.
+6th choice is Indigo.
+7th choice is Yellow. */
 
-//17. Write a JavaScript program to shuffle an array. Go to the editor
+//16. Write a program to find the leap years in a given range of years. Go to the editor
+function findLeapYear(starYear,endYear){
+  let leapYear = '';
 
-//18. Write a JavaScript program to perform a binary search. Go to the editor
-/* Note : A binary search or half-interval search algorithm finds the position of a specified input value within an array sorted by key value.
-Sample array :
-var items = [1, 2, 3, 4, 5, 7, 8, 9];
-Expected Output :
-console.log(binary_Search(items, 1)); //0
-console.log(binary_Search(items, 5)); //4 */
+  for (let i = starYear; i <= endYear; i++){
+    if ((i % 4 === 0 && i % 100 !== 0) || (i % 100 === 0 && i % 400 === 0)){
+      leapYear += i + ', ';
+    }
+  }
+  return leapYear;
+}
+console.log(findLeapYear(2000,2024));
+/* => 2000, 2004, 2008, 2012, 2016, 2020, 2024, */
 
-//19. There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. Go to the editor
-/* Sample array :
-array1 = [1,0,2,3,4];
-array2 = [3,5,6,7,8,13];
-Expected Output :
-[4, 5, 8, 10, 12, 13] */
+//17. Write a JavaScript program to shuffle an array. 
+function shuffleArray(arr){
+  return arr.sort((a,b) => Math.floor(Math.random() * arr.length) - b)  
+}
+console.log(shuffleArray([1,2,3,4,5,6]));
+/* => [ 1, 2, 5, 4, 3, 6 ] */
 
-//20. Write a JavaScript program to find duplicate values in a JavaScript array. Go to the editor
+//18. Write a program to perform a binary search. 
+//Note : A binary search or half-interval search algorithm finds the position of a specified input value within an array sorted by key value.
+function binarySearch(arr,value){
+  const indexes = [];
 
-//21. Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level. Go to the editor
+  arr.forEach((arrayValue,index) => {
+    (arrayValue == value) ? indexes.push(index) : indexes;
+  })
+  return indexes;
+}
+console.log(binarySearch([1,2,3,4,5,4,'e','e'],'e'));
+/* => [6,7] */
+
+//19. There are two arrays with individual values, write a program to compute the sum of each individual index value from the given arrays.
+function sumOfIndividualArray(arr1,arr2){
+  let maxLength = Math.max(arr1.length, arr2.length);
+  const result = [];
+
+  for (let i = 0; i < maxLength; i++){
+    if (arr1.length < arr2.length){
+      arr1.push(0);
+    }else{
+      arr2.push(0);
+    }
+    result.push(arr1[i] + arr2[i]);
+  }
+  return result;
+  
+}
+console.log(sumOfIndividualArray([1,0,2,3,4],[3,5,6,7,8,13]));
+/* => [4, 5, 8, 10, 12, 13] */
+
+//20. Write a program to find duplicate values in an array. 
+function duplicateValue(arr){
+  return arr.filter((value,index) => arr.indexOf(value) != index);
+}
+console.log(duplicateValue([1, 2, -2, 4, 5, 4, 7, 8, 7, 71, 1, 3, 6,'a','a']));
+/* => [ 4, 7, 1, 'a' ] */
+
+//*21. Write a program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level. Go to the editor
 /* Sample Data :
-console.log(flatten([1, [2], [3, [[4]]],[5,6]]));
+console.log(flatten([1, [2], [3, [[4]]],[5,6] ]));
 [1, 2, 3, 4, 5, 6]
 console.log(flatten([1, [2], [3, [[4]]],[5,6]], true));
 [1, 2, 3, [[4]], 5, 6] */
 
-//22. Write a JavaScript program to compute the union of two arrays. Go to the editor
-/* Sample Data :
+//22. Write a program to compute the union of two arrays.
+function union(arr1,arr2){
+  const arrays = arr1.concat(arr2);
+  return  arrays.filter((value,index) => arrays.indexOf(value) === index ? true : false).sort((a,b) => a - b);
+}
 console.log(union([1, 2, 3], [100, 2, 1, 10]));
-[1, 2, 3, 10, 100] */
+/* => [1, 2, 3, 10, 100] */
 
-//23. Write a JavaScript function to find the difference of two arrays. Go to the editor
-/* Test Data :
+//23. Write a function to find the difference of two arrays.
+function difference(arr1,arr2){
+  const arrays = arr1.concat(arr2);
+  return arrays.filter(value => arrays.indexOf(value) === arrays.lastIndexOf(value)).sort((a,b) => a - b);
+}
 console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-["3", "10", "100"]
-console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
-["6"]
-console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-["3", "10", "100"] */
+/* => [ 3, 10, 100 ] */
 
-//24. Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array. Go to the editor
-/* Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
-Expected result : [15, -22, 47] */
+//24. Write a function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.
+function  removeOthersDataType(arr){
+  //return arr.filter(item => item);
 
-//25. Write a JavaScript function to sort the following array of objects by title value. Go to the editor
-/* Sample object :
+  const  result = [];
+  for (let item in arr){
+    if (arr[item]){
+      result.push(arr[item]);
+    }
+  }
+  return result;
+}
+console.log(removeOthersDataType([NaN, 0, 15, false, -22, '',undefined, 47, null]));
+/* => [ 15, -22, 47 ] */
 
-var library = [ 
+//25. Write a function to sort the following array of objects by title value.
+function sortCompare(arr){
+  return arr.sort((a,b) => {
+    return a.title.localeCompare(b.title)
+  })
+}
+console.log(sortCompare([ 
    { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
    { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
    { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
-   ];
+]));
+/* => [
+  {
+    author: 'Suzanne Collins',
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    libraryID: 3245
+  },
+  { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
+  { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 }
+] */
 
-Expected result :
+//26. Write a program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number.
+function findPair(arr,target){
+  const result = [];
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] + arr[i + 1] === target ){
+      result.push(i, i + 1);
+    }
+  }
+  return result;
+}
+console.log(findPair([10,20,10,40,50,60,70], 50));
+/* => [ 2, 3 ] */
 
-[[object Object] {
-  author: "Suzanne Collins",
-  libraryID: 3245,
-  title:"Mockingjay:The Final Book of The Hunger Games"
-}, [object Object] {
-  author: "Bill Gates",
-  libraryID: 1254,
-  title: "The Road Ahead"
-}, [object Object] {
-  author: "Steve Jobs",
-  libraryID: 4264,
-  title: "Walter Isaacson"
-}] */
-
-//26. Write a JavaScript program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number. Go to the editor
-
-/* Input: numbers= [10,20,10,40,50,60,70], target=50
-Output: 2, 3 */
-
-
-//27. Write a JavaScript function to retrieve the value of a given property from all elements in an array. Go to the editor
+//27. Write a function to retrieve the value of a given property from all elements in an array. Go to the editor
 /* Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
 Expected result : [15, -22, 47] */
+function retrieveValue(arr){
+  return arr.filter(item => item);
+}
+console.log(retrieveValue([NaN, 0, 15, false, -22, '',undefined, 47, null]));
+/* => [15, -22, 47] */
 
-//28. Write a JavaScript function to find the longest common starting substring in a set of strings. Go to the editor
+//28. Write a function to find the longest common starting substring in a set of strings. Go to the editor
 
-/* Sample array : console.log(longest_common_starting_substring(['go', 'google']));
+/* Sample array : 
 Expected result : "go" */
+function longestCommonStartingSubstring(arr){
 
+}
+console.log(longestCommonStartingSubstring(['go', 'google']));
 
-//29. Write a JavaScript function to fill an array with values (numeric, string with one character) on supplied bounds. Go to the editor
+//29. Write a function to fill an array with values (numeric, string with one character) on supplied bounds. Go to the editor
 
 /* Test Data :
-console.log(num_string_range('a', "z", 2));
 ["a", "c", "e", "g", "i", "k", "m", "o", "q", "s", "u", "w", "y"] */
+function numStringRange(start,end,step){
+  let startNum = start.charCodeAt(0);
+  let endNum = end.charCodeAt(0);
+  let result = '';
+  
+  for (let i = startNum; i < endNum; i++){
+    if (i % step === 0){
+      result += String.fromCharCode(i);
+    }
+  }
+  return result.split('');
+}
+console.log(numStringRange('a', "z", 2));
+/* => ['b', 'd', 'f', 'h', 'j', 'l', 'n', 'p', 'r', 't', 'v', 'x'] */
 
+//30. Write a function to merge two arrays and removes all duplicates elements.
+function mergeArray(array1, array2){
+  let merge = array1.concat(array2).sort((a,b) => a - b);
 
-//30. Write a JavaScript function to merge two arrays and removes all duplicates elements. Go to the editor
+  return merge.filter((item,index) => merge.indexOf(item) === index );
+}
+console.log(mergeArray([1, 2, 3], [2, 30, 1]));
+/* => [ 1, 2, 3, 30 ] */
 
-/* Test data :
-var array1 = [1, 2, 3];
-var array2 = [2, 30, 1];
-console.log(merge_array(array1, array2));
-[3, 2, 30, 1] */
+//31. Write a function to remove a specific element from an array.
+function removeArrayElement(arr,removeEle){
+  return arr.filter(item => item !== removeEle)
+}
+console.log(removeArrayElement([2, 5, 9, 6], 5));
+/* => [ 2, 9, 6 ] */
 
-
-//31. Write a JavaScript function to remove a specific element from an array. Go to the editor
-
-/* Test data :
-console.log(remove_array_element([2, 5, 9, 6], 5));
-[2, 9, 6] */
-
-//32. Write a JavaScript function to find an array contains a specific element. Go to the editor
+//32. Write a function to find an array contains a specific element. Go to the editor
 
 /* Test data :
 arr = [2, 5, 9, 6];
 console.log(contains(arr, 5));
 [True] */
+function contains(arr,search){
+  return arr.includes(search)
+}
+console.log(contains([2,4,5,8,6], 5));
+/* => true; */
 
-//33. Write a JavaScript script to empty an array keeping the original. Go to the editor
+//33. Write a script to empty an array keeping the original.
+function emptyArray(arr){
+  return arr.length = 0;
+}
+console.log(emptyArray([2,3,4,6]));
+/* => [] */
 
+//34. Write a function to get nth largest element from an unsorted array. 
+function nthLargestUnsortedArray(arr,nthPosition){
+  return arr.sort((a,b) => a-b)[nthPosition]
+}
+console.log(nthLargestUnsortedArray([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
+/* => 89 */
 
-//34. Write a JavaScript function to get nth largest element from an unsorted array. Go to the editor
+//35. Write a function to get a random item from an array. Go to the editor
+function randomItem(arr){
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+console.log(randomItem(["Samsu","Bably","Yasin","Jannat"]));
+console.log(randomItem([1,2,3,4]));
+/* => Yasin */
+/* => 1 */
 
-/* Test Data :
-console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
-89 */
+//36. Write a function to create a specified number of elements with pre-filled numeric value array. 
+function arrayFilled(arrLength,perFilled){
+  return Array(arrLength).fill(perFilled);
+}
+console.log(arrayFilled(6, 0));
+console.log(arrayFilled(4, 11));
+/* => [ 0, 0, 0, 0, 0, 0 ] */
+/* => [ 11, 11, 11, 11 ] */
 
+//37. Write a function to create a specified number of elements with pre-filled string value array.
+function ArrayFilledChar(arrLength,perFilled){
+  return Array(arrLength).fill(perFilled);
+}
+console.log(ArrayFilledChar(4, 'password'));
+console.log(ArrayFilledChar(3, 'default value'));
+/* => ["password", "password", "password", "password"] */
+/* => ["default value", "default value", "default value"] */
 
-//35. Write a JavaScript function to get a random item from an array. Go to the editor
+//38. Write a function to move an array element from one position to another.
+function moveArrayElement(arr,moveItem,movingPosition){
+  let newArr = arr.splice(moveItem,1)[0];
+  arr.splice(movingPosition,0,newArr);
+  return arr;
+}
+console.log(moveArrayElement([10, 20, 30, 40, 50], 0, 2));
+console.log(moveArrayElement([10, 20, 30, 40, 50], -1, -2));
+/* => [20, 30, 10, 40, 50] */
+/* => [10, 20, 30, 50, 40]  */
 
+//39. Write a function to filter false, null, 0 and blank values from an array.
+function filterArrayValues(arr){
+  return arr.filter(item => item);
+}
+console.log(filterArrayValues([58, '', 'abcd', true, null, false, 0]));
+/* => [58, "abcd", true] */
 
-//36. Write a JavaScript function to create a specified number of elements with pre-filled numeric value array. Go to the editor
+//40. Write a function to generate an array of specified length, filled with integer numbers, increase by one from starting position.
+function arrayRange(start,length){
+  return Array(length).fill().map((_,index) => start + index )
+}
+console.log(arrayRange(1, 4));
+console.log(arrayRange(-6, 4));
+/* => [ 1, 2, 3, 4 ] */
+/* => [ -6, -5, -4, -3 ] */
 
-/* Test Data :
-console.log(array_filled(6, 0));
-[0, 0, 0, 0, 0, 0]
-console.log(array_filled(4, 11));
-[11, 11, 11, 11] */
+//41. Write a function to generate an array between two integers of 1 step length.
+function  rangeBetween(start,range){
+  return Array(range - start + 1).fill().map((_,index) => start + index);
+}
+console.log(rangeBetween(4, 7));
+console.log(rangeBetween(-4, 7));
 
-//37. Write a JavaScript function to create a specified number of elements with pre-filled string value array. Go to the editor
-
-/* Test Data :
-console.log(array_filled(3, 'default value'));
-["default value", "default value", "default value"]
-console.log(array_filled(4, 'password'));
-["password", "password", "password", "password"] */
-
-//38. Write a JavaScript function to move an array element from one position to another. Go to the editor
-
-/* Test Data :
-console.log(move([10, 20, 30, 40, 50], 0, 2));
-[20, 30, 10, 40, 50]
-console.log(move([10, 20, 30, 40, 50], -1, -2));
-[10, 20, 30, 50, 40] */
-
-//39. Write a JavaScript function to filter false, null, 0 and blank values from an array. Go to the editor
-
-/* Test Data :
-console.log(filter_array_values([58, '', 'abcd', true, null, false, 0]));
-[58, "abcd", true] */
-
-//40. Write a JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position. Go to the editor
-
-/* Test Data :
-console.log(array_range(1, 4));
-[1, 2, 3, 4]
-console.log(array_range(-6, 4));
-[-6, -5, -4, -3] */
-
-//41. Write a JavaScript function to generate an array between two integers of 1 step length. Go to the editor
-
-/* Test Data :
-console.log(rangeBetwee(4, 7));
-[4, 5, 6, 7]
-console.log(rangeBetwee(-4, 7));
-[-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7] */
-
-//42. Write a JavaScript function to find the unique elements from two arrays. Go to the editor
-
-/* Test Data :
+//42. Write a function to find the unique elements from two arrays.
+function difference(arr1, arr2){
+  let arrConcat = arr1.concat(arr2);
+  return arrConcat.filter((item,index) => arrConcat.indexOf(item) == index).sort((a,b) => a - b);
+}
 console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-["1", "2", "3", "10", "100"]
 console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
-["1", "2", "3", "4", "5", "6"]
-console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-["1", "2", "3", "10", "100"] */
+/* => [ 1, 2, 3, 10, 100 ] */
+/* => [ 1, 2, [ 2 ], 3, 4, 5, [ 3, [ [Array] ] ], [ 5, 6 ] ] */
 
-//43. Write a JavaScript function to create an array of arrays, ungrouping the elements in an array produced by zip. Go to the editor
+//*43. Write a function to create an array of arrays, un-grouping the elements in an array produced by zip. Go to the editor
 
 /* Test Data :
-unzip([['a', 1, true], ['b', 2, false]])
 unzip([['a', 1, true], ['b', 2]])
 Expected Output:
 [["a","b"],[1,2],[true,false]]
 [["a","b"],[1,2],[true]] */
 
-//44. Write a JavaScript function to create an object from an array, using the specified key and excluding it from each value. Go to the editor
+//44. Write a function to create an object from an array, using the specified key and excluding it from each value. Go to the editor
 
 /* Test Data :
 indexOn([ { id: 10, name: 'apple' }, { id: 20, name: 'orange' } ], x => x.id)
 Expected Output:
 {"undefined":{"id":20,"name":"orange"}} */
 
-//45. Write a JavaScript program to find all unique values in an given array of numbers. Go to the editor
+//45. Write a program to find all unique values in an given array of numbers. Go to the editor
 
 /* Test Data :
 [1, 2, 2, 3, 4, 4, 5]
@@ -368,8 +489,15 @@ Expected Output:
 [1,2,3,4,5]
 [1,2,3,4,5]
 [1,-2,3,4,-5,-6] */
+function uniqueValue(arr){
+  //return arr = [... new Set(arr)];
 
-//46. Write a JavaScript program to generate all permutations of an array's elements (contains duplicates). Go to the editor
+  return arr.filter((value,index) => arr.indexOf(value) == index);
+}
+console.log(uniqueValue([1,2,3,4,4,5]));
+console.log(uniqueValue([1, -2, -2, 3, 4, -5, -6, -5]));
+
+//46. Write a program to generate all permutations of an array's elements (contains duplicates). Go to the editor
 
 /* Test Data :
 [1, 33, 5]
